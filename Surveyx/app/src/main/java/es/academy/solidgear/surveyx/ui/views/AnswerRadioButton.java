@@ -21,9 +21,6 @@ public class AnswerRadioButton extends RadioButton {
         layoutParams.gravity = Gravity.CENTER_VERTICAL;
         setLayoutParams(layoutParams);
 
-        // Radio button
-        setButtonDrawable(R.drawable.custom_radio_button);
-
         // Text
         setText(option);
         //setCustomFont(context, getResources().getString(R.string.default_font));
