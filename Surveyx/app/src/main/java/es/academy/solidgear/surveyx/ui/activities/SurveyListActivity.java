@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.DialogFragment;
@@ -178,7 +177,7 @@ public class SurveyListActivity extends BaseActivity implements
                                                             GeofenceModel.EXPIRATION_DURATION_BY_DEFAULT,
                                                             Geofence.GEOFENCE_TRANSITION_ENTER);
 
-            if (!survey.getAlreadyDone()) { // && survey.getDistanceToCurrentPosition() > MIN_DISTANCE_TO_LOCATED_SURVEY_METERS) {
+            if (!survey.getAlreadyDone() && survey.getDistanceToCurrentPosition() > MIN_DISTANCE_TO_LOCATED_SURVEY_METERS) {
                 geofenceModelList.add(geofenceModel);
             }
         }
