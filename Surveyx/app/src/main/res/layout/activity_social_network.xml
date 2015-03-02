@@ -68,7 +68,7 @@
     <FrameLayout
         style="@style/socialNetworksFrame"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="160dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
@@ -96,7 +96,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
+                android:layout_marginRight="20dp"
+                android:weightSum="1">
 
                     <ImageView
                         android:layout_width="50dp"
@@ -105,12 +106,41 @@
                         android:src="@drawable/facebook_icon"
                         android:layout_gravity="center_horizontal" />
 
+
+
                     <Button
-                        android:layout_width="match_parent"
+                        android:layout_width="92dp"
                         android:layout_height="match_parent"
                         android:id="@+id/facebookButton"
                         android:text="@string/social_networks_facebook_button"
-                        android:layout_gravity="center_horizontal" />
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1.16" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/twitterImage"
+                    android:src="@drawable/twitter_icon"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/twitterButton"
+                    android:text="@string/social_networks_twitter_button"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.16" />
 
             </TableRow>
 
